@@ -155,7 +155,14 @@
               <p>مواعيد العمل</p>
             </div>
           </div>
-  
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <div class="count-box">
+                    <i class="icofont-clock-time"></i>
+                    <span data-toggle="counter-up">12</span>
+                    <p>مواعيد العمل</p>
+                </div>
+            </div>
         </div>
 
       </div>
@@ -163,9 +170,9 @@
 
 
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg ">
-      <div class="container" data-aos="fade-up">
+     <!-- ======= Services Section ======= -->
+     <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up" style="text-align: right">
 
         <div class="section-title">
           <h2>خدماتنا</h2>
@@ -211,154 +218,75 @@
       <!-- ======= Three Services  ======= -->
       <section id="portfolio" class="portfolio">
           <div class="container" data-aos="fade-up">
+              <div class="row" style="direction: rtl;text-align: right">
+                  <!--First Service -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                          <img src="assets/img/service4.jpg" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4>خدمه رقم 3</h4>
+                              <p>خدمه</p>
+                              <div class="portfolio-links">
+                                  <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
 
-              <div class="section-title">
-                  <h2>الخدمات</h2>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-body" style="background-color:#222222; height: auto;">
+                          <h5 class="card-title">خدمه 1</h5>
+                          <p class="card-text" style="color: blanchedalmond; size: 30px;" >
+                              خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
+                          </p>
+                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;">طلب الخدمه</a>
+                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;" >عرض الطلبات</a>
+                      </div>
+                  </div>
+                  <!--Second Service -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                          <img src="assets/img/service4.jpg" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4>خدمه رقم 3</h4>
+                              <p>خدمه</p>
+                              <div class="portfolio-links">
+                                  <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-body" style="background-color:#222222; height: auto;">
+                          <h5 class="card-title">خدمه 1</h5>
+                          <p class="card-text" style="color: blanchedalmond; size: 30px;" >
+                              خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
+                          </p>
+                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;">طلب الخدمه</a>
+                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;" >عرض الطلبات</a>
+                      </div>
+                  </div>
+                  <!--Third Service -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                          <img src="assets/img/service4.jpg" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                              <h4>خدمه رقم 3</h4>
+                              <p>خدمه</p>
+                              <div class="portfolio-links">
+                                  <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-body" style="background-color:#222222; height: auto;">
+                          <h5 class="card-title">خدمه 1</h5>
+                          <p class="card-text" style="color: blanchedalmond; size: 30px;" >
+                              خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
+                          </p>
+                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;">طلب الخدمه</a>
+                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;" >عرض الطلبات</a>
+                      </div>
+                  </div>
 
               </div>
-<<<<<<< HEAD:index.html
-            </div>
-            <div class="card-body" style="background-color:#222222; height: auto;">
-              <h5 class="card-title">خدمه 1</h5>
-              <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه 
-              </p>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;">طلب الخدمه</a>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;" >عرض الطلبات</a>
-            </div>
-          </div>
-=======
-            <div class="row">
->>>>>>> b667c5e786d4ef63389dbfbd7f75b0a1a9ed85c8:Site/pages/site/index.php
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/service1.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>خدمه رقم 1</h4>
-                            <p>خدمه</p>
-                            <div class="portfolio-links">
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body" style="background-color:#F2AB04; height: auto;">
-                        <h5 class="card-title">خدمه 1</h5>
-                        <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                            خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
-                        </p>
-                        <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #222222;">طلب الخدمه</a>
-                        <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #222222;" >عرض الطلبات</a>
-                    </div>
-                </div>
-<<<<<<< HEAD:index.html
-              </div>
-            </div>
-            <div class="card-body" style="background-color:#222222; height: auto;">
-              <h5 class="card-title">خدمه 1</h5>
-              <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه 
-              </p>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;">طلب الخدمه</a>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color:#F2AB04;" >عرض الطلبات</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/service4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>خدمه رقم 3</h4>
-                <p>خدمه</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="card-body" style="background-color:#222222; height: auto;">
-              <h5 class="card-title">خدمه 1</h5>
-              <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه 
-              </p>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;">طلب الخدمه</a>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;" >عرض الطلبات</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/service2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>خدمه رقم 2</h4>
-                <p>خدمه</p>
-                <div class="portfolio-links">
-                
-          
-                </div>
-              </div>
-            </div>
-            <div class="card-body" style="background-color:#222222;height: auto; ">
-              <h5 class="card-title">خدمه 1</h5>
-              <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه 
-              </p>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;">طلب الخدمه</a>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;" >عرض الطلبات</a>
-=======
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/service2.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>خدمه رقم 2</h4>
-                            <p>خدمه</p>
-                            <div class="portfolio-links">
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body" style="background-color:#F2AB04;height: auto; ">
-                        <h5 class="card-title">خدمه 1</h5>
-                        <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                            خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
-                        </p>
-                        <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #222222;">طلب الخدمه</a>
-                        <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #222222;" >عرض الطلبات</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/service4.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>خدمه رقم 1</h4>
-                            <p>خدمه</p>
-                            <div class="portfolio-links">
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="card-body" style="background-color:#F2AB04; height: auto; ">
-                        <h5 class="card-title">خدمه 1</h5>
-                        <p class="card-text" style="color: blanchedalmond; " >
-                            خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
-                        </p>
-                        <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #222222;">طلب الخدمه</a>
-                        <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #222222;" >عرض الطلبات</a>
-                    </div>
-                </div>
-
->>>>>>> b667c5e786d4ef63389dbfbd7f75b0a1a9ed85c8:Site/pages/site/index.php
-            </div>
-
-
-
-
-
-
 
           </div>
       </section><!-- End Portfolio Section -->
@@ -366,65 +294,34 @@
       <!-- Petrol Stations  -->
       <section class="bg-light" id="portfolio">
 
-          <div class="container">
-
-              <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 class="section-heading text-uppercase" style="margin-top:100px;">معرض السيارات الحديثه</h2>
-                      <br><br>
-                  </div>
-              </div>
-<<<<<<< HEAD:index.html
-              
+        <div class="continer">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" >معرض السيارات الحديثه</h2>
+                    <br><br>
+                </div>
             </div>
-            <div class="card-body" style="background-color:#222222; height: auto; ">
-              <h5 class="card-title">خدمه 1</h5>
-              <p class="card-text" style="color: blanchedalmond; " >
-                خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه 
-              </p>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;">طلب الخدمه</a>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;" >عرض الطلبات</a>
-            </div>
-          </div>
-=======
->>>>>>> b667c5e786d4ef63389dbfbd7f75b0a1a9ed85c8:Site/pages/site/index.php
+            <div class="row" style="direction: rtl">
 
-              <div class="row" style="direction: rtl">
-
-                    <?php for($i=0;$i<2;$i++){ ?>
-                      <div class="col-md-4 col-sm-6 portfolio-item">
-                          <a class="portfolio-link" data-toggle="modal" href="<?php echo '#portfolioModal'. $ca['id'] ?>">
-                              <div class="portfolio-hover">
-                                  <div class="portfolio-hover-content">
-                                      <i class="fas fa-plus fa-3x"></i>
-                                  </div>
-                              </div>
-                              <img class="img-fluid" src="<?php echo "assets/img/service1.jpg" ?>" alt="" style="width: 400px;height:268px;">
-                          </a>
-                          <div class="portfolio-caption">
-                              <center>
-                                  <h4><?php echo "name" ?></h4>
-                              </center>
-                          </div>
-                      </div>
-                  <?php } ?>
-              </div>
-<<<<<<< HEAD:index.html
-              
+                <?php for($i=0;$i<2;$i++){ ?>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="<?php echo '#portfolioModal'. $ca['id'] ?>">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="<?php echo "assets/img/service1.jpg" ?>" alt="" style="width: 400px;height:268px;">
+                        </a>
+                        <div class="portfolio-caption">
+                            <center>
+                                <h4><?php echo "name" ?></h4>
+                            </center>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
-            <div class="card-body" style="background-color:#222222; height: auto;">
-              <h5 class="card-title">خدمه 1</h5>
-              <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه 
-              </p>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;">طلب الخدمه</a>
-              <a href="#!" class="btn btn-primary" style="color: blanchedalmond;background-color: #F2AB04;" >عرض الطلبات</a>
-            </div>
-          </div>
-=======
->>>>>>> b667c5e786d4ef63389dbfbd7f75b0a1a9ed85c8:Site/pages/site/index.php
-
-          </div>
+        </div>
 
       </section>
 
@@ -498,89 +395,7 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
-    <!-- ======= petrol Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>محطات الوقود</h2>
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/station1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>محطة  وقود 1 </h4>
-              
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/station2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>محطة  وقود 2 </h4>
-
-               
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/station3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>محطة  وقود 3 </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/station4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>محطة  وقود 4 </h4>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End petrol Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -660,51 +475,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>محطة وقود<span>.</span></h3>
-            <p>
-              شارع الجلاء <br>
-              المنصوره<br>
-              <strong> +1 5589 55488 55:</strong>رقم الهاتف <br>
-              <br>
-              <strong>info@example.com</strong> البريد الالكتروني<br>
-            
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>روابط مفيده</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">الصفحه الئيسيه</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">محطات الوقود</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">خدماتنا</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">سياسة الخصوصيه</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>خدامتنا</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">حجز بطاقة خصومات</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">شراء براميل بنزين</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">شراء براميل غاز</a></li>
-            
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>انضم الينا</h4>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <div class="container d-md-flex py-4">
 
