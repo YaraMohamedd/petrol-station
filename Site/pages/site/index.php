@@ -164,7 +164,7 @@
 
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg ">
+    <section id="services" class="services section-bg " style="direction: rtl;text-align: right">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -394,7 +394,7 @@
     </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= petrol Section ======= -->
-    <section id="team" class="team section-bg">
+<!--    <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">

@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dd3f26d-0150-4a2d-ac5e-1ea954776fb9" name="Default Changelist" comment="new update">
+    <list default="true" id="8dd3f26d-0150-4a2d-ac5e-1ea954776fb9" name="Default Changelist" comment="new update1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Site/pages/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/index.php" afterDir="false" />
     </list>
@@ -58,7 +58,7 @@
       <workItem from="1604018967264" duration="417000" />
       <workItem from="1604019403165" duration="1840000" />
       <workItem from="1604022073655" duration="2590000" />
-      <workItem from="1604077566748" duration="2948000" />
+      <workItem from="1604077566748" duration="3331000" />
     </task>
     <task id="LOCAL-00001" summary="new update">
       <created>1604079048440</created>
@@ -67,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604079048440</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new update1">
+      <created>1604080619324</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604080619324</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,7 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new update" />
-    <option name="LAST_COMMIT_MESSAGE" value="new update" />
+    <MESSAGE value="new update1" />
+    <option name="LAST_COMMIT_MESSAGE" value="new update1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="454" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604019252936">
@@ -104,10 +112,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="447" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604019334782" />
-    <state x="1646" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604079091268">
+    <state x="1646" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604080609974">
       <screen x="1366" y="0" width="1376" height="900" />
     </state>
-    <state x="1646" y="183" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604079091268" />
+    <state x="1646" y="183" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604080609974" />
     <state x="1871" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604079073198">
       <screen x="1366" y="0" width="1376" height="900" />
     </state>
