@@ -77,7 +77,7 @@ $(document).ready(function(){
     }, {
         text: 'Parent 4',
         icon: 'ft-download-cloud',
-        href: '/index.html',
+        href: '/index.php',
         tags: ['19'],
         selected: true
     }, {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Presento Bootstrap Template - Index</title>
+  <title>Petrol Station</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -34,44 +34,67 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top" style="text-align: right">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-10 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.html">محطة وقود<span>.</span></a></h1>
+          <h1 class="logo mr-auto"><a href="index.php">محطات الوقود<span>.</span></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+          <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
-          <nav class="nav-menu d-none d-lg-block">
+          <nav class="nav-menu d-none d-lg-block" style="width: auto;text-align: center;direction: ltr;">
             <ul>
-              <li class="active"  ><a href="#">تسجيل الدخول</a></li>
-              <li><a href="#">تسجيل الخروج</a></li>
-              <li><a href="#">لوحة التحكم</a></li>
+              <li><a href="register.php">التسجيل</a></li>
+              <li><a href="login.php">تسجيل الدخول</a></li>
+              <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
+
+              <!--
+                            <li><a href="#">تسجيل الدخول</a></li>
+
+                            <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
+              -->
               <li><a href="#contact">تواصل معنا</a></li>
               <li><a href="#team">محطات الوقود</a></li>
               <li><a href="#services">خدماتنا</a></li>
               <li class="drop-down"><a href="#portfolio">الخدمات</a>
                 <ul>
-                  <li><a href="#">حجز بطاقة خصومات</a></li>
+
+                  <li class="drop-down"><a href="#">حجز بطاقة خصومات</a>
+                    <ul>
+                      <li><a href="#">طلب خدمه</a></li>
+                      <li><a href="#">عرض الطلبات</a></li>
+                    </ul>
+                  </li>
+
                   <li class="drop-down"><a href="#">شراء براميل بنزين</a>
                     <ul>
                       <li><a href="#">طلب خدمه</a></li>
                       <li><a href="#">عرض الطلبات</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">شراء براميل غاز</a></li>
-            
+
+
+
+                  <li class="drop-down"><a href="#">شراء براميل غاز</a>
+                    <ul>
+                      <li><a href="#">طلب خدمه</a></li>
+                      <li><a href="#">عرض الطلبات</a></li>
+                    </ul>
+                  </li>
+
+                  <li></li>
+
                 </ul>
               </li>
-              <li><a href="#header">الصفحه الرئسيه</a></li>
+              <li><a href="index.php">الصفحه الرئسيه</a></li>
             </ul>
           </nav><!-- .nav-menu -->
-
           <a href="#about" class="get-started-btn scrollto">تصفح الان</a>
         </div>
       </div>
@@ -80,7 +103,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" style="text-align: right;direction: rtl">
 
     <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
       <div class="row justify-content-center">
