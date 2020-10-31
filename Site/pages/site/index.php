@@ -77,7 +77,6 @@ session_start();
                 ?>
               <!--
                             <li><a href="#">تسجيل الدخول</a></li>
-
                             <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
               -->
               <li><a href="#contact">تواصل معنا</a></li>
