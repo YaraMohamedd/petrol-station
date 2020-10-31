@@ -1,5 +1,24 @@
+<?php
 
-<!-- Login form creation starts-->
+require_once ('../../php/admin/register.php');
+session_start();
+
+if(isset($_POST['register'])){
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $state='pending';
+    $image = $_POST['img1'];
+
+    AddNewUser($name,$email,$password,$phone,$state,$image);
+    header('location:empty.php?page=register');
+}
+
+
+
+?>
+
 
 <head>
     <meta charset="utf-8">
@@ -104,19 +123,41 @@
     <!-- row and justify-content-center class is used to place the form in center -->
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-4">
-            <form class="form-container" action="login.php" method="post">
+
+            <form class="form-container" action="register.php" method="post">
                 <div class="form-group">
                     <h4 class="text-center font-weight-bold"> التسجيل  </h4>
-                    <label for="InputEmail1"> البريد الإلكتروني </label>
-                    <input type="email" class="form-control" id="InputEmail1" aria-describeby="emailHelp" placeholder="قم بإدخال البريد الإلكتروني" name="email" required >
+                    <label > اسم المستخدم  </label>
+                    <input type="text" class="form-control"   placeholder="قم بإدخال اسم المستخدم " name="name" required >
+                </div>
+
+
+                <div class="form-group">
+                    <label >البريد الإلكتروني </label>
+                    <input type="email" class="form-control"  placeholder="قم بإدخال البريد الإلكتروني " name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="InputPassword1">كلمة المرور</label>
-                    <input type="password" class="form-control" id="InputPassword1" placeholder="قم بإدخال كلمة المرور" name="password"required>
+                    <label >كلمة المرور</label>
+                    <input type="password" class="form-control"  placeholder="قم بإدخال كلمة المرور" name="password" required>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" name="login">تسجيل دخول</button>
+
+                <div class="form-group">
+                    <label > رقم الجوال   </label>
+                    <input type="text" class="form-control"   placeholder="قم بإدخال رقم الجوال  " name="phone" required >
+                </div>
+                <div class="form-group">
+                    <th scope="row">صورة</th>
+                    <td>
+                        <input type="file" class="form-control-file" id="photo1" onchange="uploadImage()" required class="btn btn-outline-primary">
+                        <input type="hidden" value="" name="img1" id="img1">
+                        <meter class="disk_d"  id="disk_d1"></meter>
+
+
+                    </td>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" name="register">تسجيل </button>
                 <div class="form-footer">
-                    <p> نسيت كلمة المرور؟ <a href="register.php">تسجيل</a></p>
+                    <p> تمتلك حساب بالفعل ؟ <a href="login.php">تسجيل الدخول</a></p>
 
                 </div>
             </form>
@@ -126,6 +167,39 @@
 <!-- Login form creation ends -->
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBHbT2gERI0qaPIkZqd3C1pG-0njxhY3YY",
+        authDomain: "petrolstation-a32b4.firebaseapp.com",
+        databaseURL: "https://petrolstation-a32b4.firebaseio.com",
+        projectId: "petrolstation-a32b4",
+        storageBucket: "petrolstation-a32b4.appspot.com",
+        messagingSenderId: "110917488947",
+        appId: "1:110917488947:web:0e7d94d3a7a1ded704ee46"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+    function uploadImage() {
+        const ref = firebase.storage().ref('/users');
+        const file = document.querySelector("#photo1").files[0];
+        const name = +new Date() + "-" + file.name;
+        const metadata = {
+            contentType: file.type
+        };
+        const task = ref.child(name).put(file, metadata);
+        task
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then(url => {
+                console.log(url);
+                document.querySelector("#img1").value = url;
+                document.querySelector("#disk_d1").value = 1;
+            })
+            .catch(console.error);
+    }
+
+</script>

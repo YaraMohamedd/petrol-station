@@ -20,8 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd3f26d-0150-4a2d-ac5e-1ea954776fb9" name="Default Changelist" comment="new update1">
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/empty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/realtime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/realtime.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Site/pages/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/php/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/php/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/php/admin/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/php/admin/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +50,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Cv/Native/CarsProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Cv/Native/E-Commerce" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +68,9 @@
       <workItem from="1604019403165" duration="1840000" />
       <workItem from="1604022073655" duration="2590000" />
       <workItem from="1604077566748" duration="3331000" />
-      <workItem from="1604091843310" duration="1341000" />
+      <workItem from="1604091843310" duration="1962000" />
+      <workItem from="1604104026293" duration="2687000" />
+      <workItem from="1604154297242" duration="20374000" />
     </task>
     <task id="LOCAL-00001" summary="new update">
       <created>1604079048440</created>
@@ -103,11 +114,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="454" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604019252936" />
-    <state x="1832" y="147" key="FileChooserDialogImpl" timestamp="1604078002781">
-      <screen x="1366" y="0" width="1376" height="900" />
+    <state x="1854" y="141" key="FileChooserDialogImpl" timestamp="1604173893422">
+      <screen x="1366" y="0" width="1440" height="860" />
     </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1604105006385" />
     <state x="1713" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604024137636" />
     <state x="1832" y="147" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604078002781" />
+    <state x="1854" y="141" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604173893422" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604019396951" />
     <state x="447" y="66" key="RollbackChangesDialog" timestamp="1604019334782">
       <screen x="0" y="0" width="1366" height="728" />
@@ -121,5 +134,9 @@
       <screen x="1366" y="0" width="1376" height="900" />
     </state>
     <state x="1871" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604079073198" />
+    <state x="1742" y="195" key="run.anything.popup" timestamp="1604181752412">
+      <screen x="1366" y="0" width="1440" height="860" />
+    </state>
+    <state x="1742" y="195" key="run.anything.popup/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604181752412" />
   </component>
 </project>

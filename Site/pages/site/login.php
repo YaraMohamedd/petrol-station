@@ -1,4 +1,12 @@
+<?php
+require_once ('../../php/admin/login.php');
+session_start();
 
+if(isset($_POST['login'])){
+    login('email','password','login');
+}
+
+?>
 <!-- Login form creation starts-->
 
 <head>
@@ -48,10 +56,28 @@
 
                 <nav class="nav-menu d-none d-lg-block" style="width: auto;text-align: center;direction: ltr;">
                     <ul>
-                        <li><a href="register.php">التسجيل</a></li>
-                        <li><a href="login.php">تسجيل الدخول</a></li>
-                        <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
-
+                        <?php
+                        if(@$_SESSION['isactive']){
+                            ?>
+                            <li><a href="logout.php">تسجيل الخروج</a></li>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if(!@$_SESSION['isactive']){
+                            ?>
+                            <li><a href="register.php">التسجيل</a></li>
+                            <li><a href="login.php">تسجيل الدخول</a></li>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if(@$_SESSION['isadmin'] && @$_SESSION['isactive']){
+                            ?>
+                            <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
+                            <?php
+                        }
+                        ?>
                         <!--
                                       <li><a href="#">تسجيل الدخول</a></li>
 
@@ -90,7 +116,7 @@
 
                             </ul>
                         </li>
-                        <li><a href="#header">الصفحه الرئسيه</a></li>
+                        <li><a href="index.php">الصفحه الرئسيه</a></li>
                     </ul>
                 </nav><!-- .nav-menu -->
                 <a href="#about" class="get-started-btn scrollto">تصفح الان</a>
