@@ -20,18 +20,101 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd3f26d-0150-4a2d-ac5e-1ea954776fb9" name="Default Changelist" comment="new update1">
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/TypesAmountsPg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/addNewTypesAmountsPg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/empty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/handelRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/newpetrol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/newquestion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/petrolstations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/questions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/fetch/requests/card.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/assets/img/avatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/assets/img/draw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/assets/img/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/assets/img/photo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/assets/img/wave.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/pages/site/viewRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/petrol/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/petrol/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/petrol/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/questions/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/questions/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/questions/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/questions/realtime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/requests/realtime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/requests/requests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/typesAndAmounts/addTypesAmounts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/typesAndAmounts/typesAndAmounts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/users/addnew.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/users/realtime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Site/php/admin/users/viewall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PetrolStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PetrolStation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/includes/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/newuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/newuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/pendingusers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/pendingusers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/refusedusers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/refusedusers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/empty.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/empty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/realtime.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/realtime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/php/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/php/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/php/admin/realtime.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/php/admin/realtime.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/riverline/multipart-parser" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/rize/uri-template" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/google/cloud-core" />
+      <path value="$PROJECT_DIR$/vendor/google/cloud-storage" />
+      <path value="$PROJECT_DIR$/vendor/google/crc32" />
+      <path value="$PROJECT_DIR$/vendor/kreait/clock" />
+      <path value="$PROJECT_DIR$/vendor/kreait/firebase-php" />
+      <path value="$PROJECT_DIR$/vendor/kreait/firebase-tokens" />
+      <path value="$PROJECT_DIR$/vendor/giggsey/libphonenumber-for-php" />
+      <path value="$PROJECT_DIR$/vendor/giggsey/locale" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1jZbtIHBcQWjk8CmdJkiFeylPpO" />
   <component name="ProjectViewState">
@@ -41,9 +124,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Cv/Native/E-Commerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel\Startup\PetrolStation\Site\pages\site\assets\img" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,7 +149,17 @@
       <workItem from="1604077566748" duration="3331000" />
       <workItem from="1604091843310" duration="1962000" />
       <workItem from="1604104026293" duration="2687000" />
-      <workItem from="1604154297242" duration="22534000" />
+      <workItem from="1604154297242" duration="25607000" />
+      <workItem from="1604190046782" duration="6502000" />
+      <workItem from="1604243037245" duration="15056000" />
+      <workItem from="1604400536090" duration="2094000" />
+      <workItem from="1604414352870" duration="3700000" />
+      <workItem from="1604449274535" duration="1440000" />
+      <workItem from="1604766528876" duration="10403000" />
+      <workItem from="1604787999049" duration="27002000" />
+      <workItem from="1604999332858" duration="593000" />
+      <workItem from="1605073330435" duration="26000" />
+      <workItem from="1605272686673" duration="11766000" />
     </task>
     <task id="LOCAL-00001" summary="new update">
       <created>1604079048440</created>
@@ -115,18 +213,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="new update1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="454" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604019252936">
+    <state x="1508" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604774537368">
+      <screen x="1366" y="0" width="1376" height="900" />
+    </state>
+    <state x="1508" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604774537368" />
+    <state x="1706" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604267661188">
+      <screen x="1366" y="0" width="1024" height="728" />
+    </state>
+    <state x="1706" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604267661188" />
+    <state x="454" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604019252936" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1605073386704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="454" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604019252936" />
-    <state x="1854" y="141" key="FileChooserDialogImpl" timestamp="1604173893422">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1604105006385" />
-    <state x="1713" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604024137636" />
+    <state x="1713" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604290860067" />
     <state x="1832" y="147" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604078002781" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1604190123260" />
     <state x="1854" y="141" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604173893422" />
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604019396951" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605073386704" />
     <state x="447" y="66" key="RollbackChangesDialog" timestamp="1604019334782">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -145,9 +249,16 @@
     </state>
     <state x="1871" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604079073198" />
     <state x="1894" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604185075598" />
-    <state x="1742" y="195" key="run.anything.popup" timestamp="1604181752412">
-      <screen x="1366" y="0" width="1440" height="860" />
+    <state x="1725" y="204" key="run.anything.popup" timestamp="1604808641413">
+      <screen x="1366" y="0" width="1376" height="900" />
     </state>
+    <state x="1725" y="204" key="run.anything.popup/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604808641413" />
     <state x="1742" y="195" key="run.anything.popup/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604181752412" />
+    <state x="1601" y="61" width="904" height="839" key="search.everywhere.popup" timestamp="1604808286104">
+      <screen x="1366" y="0" width="1376" height="900" />
+    </state>
+    <state x="1541" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604280396112" />
+    <state x="233" y="49" width="897" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1376.900@0.0.1366.728" timestamp="1604790151102" />
+    <state x="1601" y="61" width="904" height="839" key="search.everywhere.popup/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604808286104" />
   </component>
 </project>

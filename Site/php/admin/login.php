@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require_once ('realtime.php');
 
@@ -35,7 +34,7 @@ function login($email,$password,$submit){
                 $exist=1;
                 $isactive=1;
                 $_SESSION['isactive']=$isactive;
-
+                $_SESSION['userId']=$user_id;
             }else{
                 echo "
             <script>
@@ -55,10 +54,10 @@ function login($email,$password,$submit){
         if($exist == 1 ){
             echo "
             <script>
-                alert('تم تسجيل الدخول بنجاح');
+                alert('Login successfully completed');
            </script>
            ";
-            header('location:index.php');
+            //header('location:index.php');
 
         }
 

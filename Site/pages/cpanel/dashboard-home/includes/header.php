@@ -50,13 +50,14 @@
     <link rel="stylesheet" type="text/css" href="admin/vendors/css/extensions/timedropper.min.css">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="admin/css-rtl/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="admin/css-ltr/style-rtl.css">
     <!-- END Custom CSS-->
 
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Cairo', sans-serif;
+
         }
        ul li a{
             color: white;
@@ -70,3 +71,4 @@
 <body class="vertical-layout vertical-menu 2-columns  @if(Request::is('admin/users/tickets/reply*')) chat-application @endif menu-expanded fixed-navbar"
       data-open="click" data-menu="vertical-menu" data-col="2-columns">
 <!-- fixed-top-->
+<?php

@@ -1,5 +1,9 @@
 <?php
-session_start();
+
+require_once 'realtime.php';
+@$PetrolStation = SelectWithNode('PetrolStation');
+@$Questions = SelectWithNode('Questions');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,96 +47,103 @@ session_start();
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top" style="text-align: right">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-xl-10 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.php">محطات الوقود<span>.</span></a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+  <header id="header" class="fixed-top" style="text-align: left">
+      <div class="container-fluid">
+          <div class="row justify-content-center">
+              <div class="col-xl-10 d-flex align-items-center">
+                  <h3 class="logo mr-auto"><a href="index.php"> Petrol Stations<span>.</span></a></h3>
+                  <!-- Uncomment below if you prefer to use an image logo -->
+                  <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
-          <nav class="nav-menu d-none d-lg-block" style="width: auto;text-align: center;direction: ltr;">
-            <ul>
-                <?php
-                if(@$_SESSION['isactive']){
-                ?>
-                <li><a href="logout.php">تسجيل الخروج</a></li>
-                <?php
-                }
-                ?>
-                <?php
-                if(!@$_SESSION['isactive']){
-                ?>
-                 <li><a href="register.php">التسجيل</a></li>
-                 <li><a href="login.php">تسجيل الدخول</a></li>
-                <?php
-                }
-                ?>
-                <?php
-                if(@$_SESSION['isadmin'] && @$_SESSION['isactive']){
-                ?>
-                <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
-                <?php
-                }
-                ?>
-              <!--
-                            <li><a href="#">تسجيل الدخول</a></li>
-                            <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
-              -->
-              <li><a href="#contact">تواصل معنا</a></li>
-              <li><a href="#team">محطات الوقود</a></li>
-              <li><a href="#services">خدماتنا</a></li>
-              <li class="drop-down"><a href="#portfolio">الخدمات</a>
-                <ul>
+                  <nav class="nav-menu d-none d-lg-block" style="width: auto;text-align: left;direction: ltr;">
+                      <ul>
+                          <?php
+                          if(@$_SESSION['isactive']){
+                              ?>
+                              <li><a href="logout.php"> Sign out</a></li>
+                              <?php
+                          }
+                          ?>
+                          <?php
+                          if(!@$_SESSION['isactive']){
+                              ?>
+                              <li><a href="register.php">Register</a></li>
+                              <li><a href="login.php"> Login</a></li>
+                              <?php
+                          }
+                          ?>
+                          <?php
+                          if(@$_SESSION['isadmin'] && @$_SESSION['isactive']){
+                              ?>
+                              <li><a href="../cpanel/dashboard-home/dashboard.php">Cpanel</a></li>
+                              <?php
+                          }
+                          ?>
+                          <!--
+                                        <li><a href="#">تسجيل الدخول</a></li>
+                                        <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
+                          -->
+                          <li><a href="#contact">Contact us</a></li>
+                          <li><a href="#petrol">Petrol Stations</a></li>
+                          <li class="drop-down"><a href="#portfolio">Services</a>
+                              <ul>
 
-                  <li class="drop-down"><a href="#">حجز بطاقة خصومات</a>
-                    <ul>
-                      <li><a href="#">طلب خدمه</a></li>
-                      <li><a href="#">عرض الطلبات</a></li>
-                    </ul>
-                  </li>
+                                  <li class="drop-down"><a href="request.php?request=card">Reserve a discount cards</a>
+                                      <ul>
+                                          <li><a href="request.php?request=card">Add Request</a></li>
+                                          <li><a href="viewRequests.php?request=card">View Requests</a></li>
+                                      </ul>
+                                  </li>
 
-                  <li class="drop-down"><a href="#">شراء براميل بنزين</a>
-                    <ul>
-                      <li><a href="#">طلب خدمه</a></li>
-                      <li><a href="#">عرض الطلبات</a></li>
-                    </ul>
-                  </li>
-
+                                  <li class="drop-down"><a href="request.php?request=banzin">Reservation of petrol barrels</a>
+                                      <ul>
+                                          <li><a href="request.php?request=banzin">Add Request</a></li>
+                                          <li><a href="viewRequests.php?request=banzin">View Requests</a></li>
+                                      </ul>
+                                  </li>
 
 
-                  <li class="drop-down"><a href="#">شراء براميل غاز</a>
-                    <ul>
-                      <li><a href="#">طلب خدمه</a></li>
-                      <li><a href="#">عرض الطلبات</a></li>
-                    </ul>
-                  </li>
 
-                  <li></li>
+                                  <li class="drop-down"><a href="request.php?request=gaz">Reservation of gas barrels</a>
+                                      <ul>
+                                          <li><a href="request.php?request=gaz">Add Request</a></li>
+                                          <li><a href="viewRequests.php?request=gaz">View Requests</a></li>
+                                      </ul>
+                                  </li>
 
-                </ul>
-              </li>
-              <li><a href="index.php">الصفحه الرئسيه</a></li>
-            </ul>
-          </nav><!-- .nav-menu -->
-          <a href="#about" class="get-started-btn scrollto">تصفح الان</a>
-        </div>
+                                  <li></li>
+
+                              </ul>
+                          </li>
+                          <li><a href="#services">Our Services</a></li>
+
+                          <li><a href="index.php"> Home Page</a></li>
+                      </ul>
+                  </nav><!-- .nav-menu -->
+                  <a href="#services" class="get-started-btn scrollto"> Explore Now </a>
+              </div>
+          </div>
+
       </div>
-
-    </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center" style="text-align: right;direction: rtl">
+  <section id="hero" class="d-flex align-items-center" style="text-align: left;direction: ltr">
 
     <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-10">
           <div class="row">
             <div class="col-xl-5">
-              <h1>تجربة رقمية أفضل مع محطة الوقود</h1>
-              <h2>هذه المحطه تتيح لك بعض الخدمات التي توفر عليك الوقت والمجهود</h2>
-              <a href="#about" class="btn-get-started scrollto">تصفح الان</a>
+              <h1>
+                  Better digital experience with the gas station
+
+              </h1>
+              <h2>
+                  This station provides you with some services that save you time and effort
+
+              </h2>
+              <a href="#about" class="btn-get-started scrollto"> Explore Now</a>
             </div>
           </div>
         </div>
@@ -145,8 +156,7 @@ session_start();
 
 
 
-
-    <!-- ======= Counts Section ======= -->
+<!--
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
@@ -189,13 +199,12 @@ session_start();
     </section><!-- End Counts Section -->
 
 
-
      <!-- ======= Services Section ======= -->
      <section id="services" class="services section-bg ">
-      <div class="container" data-aos="fade-up" style="text-align: right">
+      <div class="container" data-aos="fade-up" >
 
         <div class="section-title">
-          <h2>خدماتنا</h2>
+          <h2>Our Services</h2>
       
         </div>
 
@@ -203,31 +212,39 @@ session_start();
           <div class="col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <i class="icofont-penalty-card"></i>
-              <h4><a href="#">حجز بطاقة خصومات</a></h4>
-              <p>كل مستخدم هيسجل بيانات معينه علشان يقدر يطلب بطاقة الخصومات وهو بيطلب هيحدد عايز يروح يستلمها من مركز معين فهيختار
-                من عدة مراكز وطبعا لكل بطاقه رقم مميز
-              </p>
+              <h4><a href="#"> Reserve a discount cards Srevice</a></h4>
+                <p>
+                    Each user will record data in order to be able to request a discount card, and he is asking for it.
+                </p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <i class="icofont-money-bag"></i>
-              <h4><a href="#">خدمة بيع براميل الغاز والبنزين</a></h4>
-              <p>المستخدم هيسجل بيانات معينه وهيختار نور البراميل الي هيحتاجها</p>
+              <h4><a href="#">Selling gas and petrol barrels Service</a></h4>
+              <p>
+                  The user will record specific data and choose the petrol barrels drums that he needs              </p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <i class="icofont-car-alt-3"></i>
-              <h4><a href="#">حجز براميل بنزين او غاز</a></h4>
-              <p>يمكن للمستخدم ان يحجز برميل الغاز او البنزين ويستلم من المحطه</p>
+              <h4><a href="#">
+                      Reservation of petrol or gas barrels Service
+                  </a></h4>
+              <p>
+                  The user can reserve a barrel of gas or gasoline and collect it from the station              </p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <i class="icofont-home"></i>
-              <h4><a href="#">حجز من البيت</a></h4>
-              <p>يطلب المستخدم براميل الغاز او البنزين وتوصله للبيت</p>
+              <h4><a href="#">
+                      Reservation from home Service
+                  </a></h4>
+              <p>
+                  The user requests gas or gasoline barrels and takes it home
+              </p>
             </div>
           </div>
     
@@ -238,27 +255,32 @@ session_start();
       <!-- ======= Three Services  ======= -->
       <section id="portfolio" class="portfolio">
           <div class="container" data-aos="fade-up">
-              <div class="row" style="direction: rtl;text-align: right">
+              <div class="row" >
                   <!--First Service -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                       <div class="portfolio-wrap">
                           <img src="assets/img/service4.jpg" class="img-fluid" alt="">
                           <div class="portfolio-info">
-                              <h4>خدمه رقم 3</h4>
-                              <p>خدمه</p>
+                              <h4>
+                                  Reserve a discount cards
+                              </h4>
+                              <p>
+                                  user will be able to reserve a discount card form his home and will feel free to ask to receive it from home or from the station                          </p>
+
+                              </p>
                               <div class="portfolio-links">
                                   <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-
                               </div>
                           </div>
                       </div>
                       <div class="card-body" style="background-color:#222222; height: auto;">
-                          <h5 class="card-title">خدمه 1</h5>
+                          <h5 class="card-title">
+                              Reserve a discount cards
+                          </h5>
                           <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                              خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
-                          </p>
-                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;">طلب الخدمه</a>
-                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;" >عرض الطلبات</a>
+                              user will be able to reserve a discount card form his home and will feel free to ask to receive it from home or from the station                          </p>
+                          <a href="request.php?request=card" class="btn btn-warning" style="color: blanchedalmond;"> Add Request</a>
+                          <a href="viewRequests.php?request=card" class="btn btn-warning" style="color: blanchedalmond;" > View Requests</a>
                       </div>
                   </div>
                   <!--Second Service -->
@@ -266,8 +288,12 @@ session_start();
                       <div class="portfolio-wrap">
                           <img src="assets/img/service4.jpg" class="img-fluid" alt="">
                           <div class="portfolio-info">
-                              <h4>خدمه رقم 3</h4>
-                              <p>خدمه</p>
+                              <h4>
+                                  Reservation of petrol barrels                              </h4>
+                              <p>
+                                  user will be able to reserve any type of petrol and any amount using our system and admins will accept or refuse his request                           </p>
+
+                              </p>
                               <div class="portfolio-links">
                                   <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
 
@@ -275,12 +301,13 @@ session_start();
                           </div>
                       </div>
                       <div class="card-body" style="background-color:#222222; height: auto;">
-                          <h5 class="card-title">خدمه 1</h5>
+                          <h5 class="card-title">Reservation of petrol barrels
+
+                          </h5>
                           <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                              خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
-                          </p>
-                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;">طلب الخدمه</a>
-                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;" >عرض الطلبات</a>
+                              user will be able to reserve any type of petrol and any amount using our system and admins will accept or refuse his request                           </p>
+                          <a href="request.php?request=banzin" class="btn btn-warning" style="color: blanchedalmond;"> Add Request</a>
+                          <a href="viewRequests.php?request=banzin" class="btn btn-warning" style="color: blanchedalmond;" > View Requests</a>
                       </div>
                   </div>
                   <!--Third Service -->
@@ -288,8 +315,13 @@ session_start();
                       <div class="portfolio-wrap">
                           <img src="assets/img/service4.jpg" class="img-fluid" alt="">
                           <div class="portfolio-info">
-                              <h4>خدمه رقم 3</h4>
-                              <p>خدمه</p>
+                              <h4>
+                                  Reservation of gas barrels
+                              </h4>
+                              <p>
+                                  user will be able to reserve any type of gas and any amount using our system and admins will accept or refuse his request                           </p>
+
+                              </p>
                               <div class="portfolio-links">
                                   <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
 
@@ -297,33 +329,36 @@ session_start();
                           </div>
                       </div>
                       <div class="card-body" style="background-color:#222222; height: auto;">
-                          <h5 class="card-title">خدمه 1</h5>
+                          <h5 class="card-title">
+
+                              Reservation of gas barrels</h5>
                           <p class="card-text" style="color: blanchedalmond; size: 30px;" >
-                              خدمه خدمه خدمه خدمه خدمه خدمه    خدمه خدمه   خدمه   خدمه  خدمه
+                              user will be able to reserve any type of gas and any amount using our system and admins will accept or refuse his request                           </p>
                           </p>
-                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;">طلب الخدمه</a>
-                          <a href="#!" class="btn btn-warning" style="color: blanchedalmond;" >عرض الطلبات</a>
+                          <a href="request.php?request=gaz" class="btn btn-warning" style="color: blanchedalmond;"> Add Request</a>
+                          <a href="viewRequests.php?request=gaz" class="btn btn-warning" style="color: blanchedalmond;" > View Requests</a>
                       </div>
                   </div>
-
               </div>
 
           </div>
       </section><!-- End Portfolio Section -->
 
       <!-- Petrol Stations  -->
-      <section class="bg-light" id="portfolio">
+      <?php if(@$PetrolStation){
+                if(count(@$PetrolStation) > 0){
+          ?>
 
+      <section class="bg-light" id="petrol">
         <div class="continer">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase" >معرض السيارات الحديثه</h2>
+                    <h2 class="section-heading text-uppercase" > Petrol Stations  </h2>
                     <br><br>
                 </div>
             </div>
             <div class="row" style="direction: rtl">
-
-                <?php for($i=0;$i<2;$i++){ ?>
+                <?php foreach ($PetrolStation as $ca){ ?>
                     <div class="col-md-4 col-sm-6 portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="<?php echo '#portfolioModal'. $ca['id'] ?>">
                             <div class="portfolio-hover">
@@ -331,84 +366,51 @@ session_start();
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="<?php echo "assets/img/service1.jpg" ?>" alt="" style="width: 400px;height:268px;">
+                            <img class="img-fluid" src="<?php echo $ca['image'] ?>" alt="" style="width: 400px;height:268px;">
                         </a>
                         <div class="portfolio-caption">
                             <center>
-                                <h4><?php echo "name" ?></h4>
+                                <h4><?php echo $ca['name'] ?></h4>
                             </center>
                         </div>
                     </div>
                 <?php } ?>
             </div>
         </div>
-
       </section>
-
+       <?php }
+      }?>
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>اسئله متكرره</h2>
+          <h2>Frequently Asked Questions </h2>
         </div>
 
-        <ul class="faq-list" data-aos="fade-up">
-
+        <ul class="faq-list" data-aos="fade-up" style="direction: ltr;text-align: left">
+            <?php if(@$Questions){
+            if(count(@$Questions) > 0){
+                foreach ($Questions as $q){
+            ?>
           <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <a data-toggle="collapse" class="collapsed" href="#faq1"><?php echo $q['question']?> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq1" class="collapse" data-parent=".faq-list">
               <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  <center>
+                    <?php echo $q['answer'] ?>
+
+                </center>
               </p>
             </div>
           </li>
 
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq2" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq3" class="collapse" data-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq4" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq5" class="collapse" data-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq6" class="collapse" data-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
+        <?php
+                }
+            }
+            }
+        ?>
 
         </ul>
 
@@ -416,13 +418,12 @@ session_start();
     </section><!-- End Frequently Asked Questions Section -->
 
 
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>تواصل معنا</h2>
+          <h2>Contact Us</h2>
          
         </div>
 
@@ -434,21 +435,21 @@ session_start();
               <div class="col-md-12">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>العنوان</h3>
-                  <p>شارع الجلاء المنصوره</p>
+                  <h3>Address</h3>
+                  <p>Our Company Address</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
-                  <h3>البريد الالكتروني</h3>
+                  <h3>Emails</h3>
                   <p>info@example.com<br>contact@example.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
-                  <h3>رقم الهاتف</h3>
+                  <h3>Phone Numbers</h3>
                   <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
                 </div>
               </div>
@@ -457,7 +458,7 @@ session_start();
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="index.php" method="post">
               <div class="form-row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -474,14 +475,10 @@ session_start();
               </div>
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
+
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">ارسال</button></div>
+
+              <div class="text-center"><button  class="btn btn-warning" type="submit" name="contact">Send</button></div>
             </form>
           </div>
 
@@ -498,15 +495,15 @@ session_start();
   <div class="container d-md-flex py-4">
 
   <div class="mr-md-auto text-center text-md-left">
-    <div class="copyright">
+  <!--  <div class="copyright">
       &copy; Copyright <strong><span>Presento</span></strong>. كافة الحقوق محفوظه
-    </div>
+    </div>-->
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="https://bootstrapmade.com/">MohamedElredeny</a>
     </div>
   </div>
   <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -539,44 +536,80 @@ session_start();
 </body>
 
 </html>
-<?php foreach($cats as $ca){ ?>
-    <div class="portfolio-modal modal fade" id="<?php echo 'portfolioModal'. $ca['id']; ?>" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
+<?php foreach ($PetrolStation as $ca){ ?>
+    <div class="modal fade bd-example-modal-lg" id="<?php echo 'portfolioModal'. $ca['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
+
+
+
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
                         <div class="rl"></div>
                     </div>
                 </div>
-                <div class="container" style="height:1400px;">
+                <div class="container" style="height:800px;width: 800px">
 
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
+
                                 <!-- Project Details Go Here -->
-                                <img src="img/<?php echo $ca['Image']?> " style="margin-left: 70px ;width: 500px;height: 200px">
+                                <center>
+                                    <h2><?php echo $ca['name'] ?></h2>
+                                    <br>
+                                    <img src="<?php echo $ca['image']?> " style="width: 500px;height: 300px">
+
+
+
+                                </center>
+
+                                <br>
+                                <center>
+                                    <h5> Station Details</h5>
+
+                                </center>
+                                <!-- Table -->
+                                <table class="table table-hover" style="direction: ltr;text-align: center;width: 100%">
+
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Station Name</th>
+                                        <td><?php echo $ca['name'] ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Station Details</th>
+                                        <td><?php echo $ca['details'] ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Station Address</th>
+                                        <td><?php echo $ca['address'] ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Customer Service</th>
+                                        <td><?php echo $ca['contact'] ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">  Delivery Services </th>
+                                        <?php if($ca['delivery'] == '1'){?>
+                                        <td><?php echo "Available" ?></td>
+                                        <?php }else{ ?>
+                                            <td><?php echo "Not Available" ?></td>
+
+                                        <?php } ?>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <!-- End of Table -->
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <?php foreach($res as $r){?>
-                            <?php if($r['type']== $ca['id']){ ?>
-                                <?php  echo " <div class='col-sm-4'   >" ?>
-                                <div class="card" >
-                                    <div class="card-body">
-                                        <img class="card-img-top" src="img/<?php echo $r['Image']; ?>" alt="Card image cap" style="height: 200px;width: 300px">
-
-                                        <h5 class="card-title"><?php echo $r['name']; ?></h5>
-                                        <p class="card-text"><?php echo $r['Details']; ?></p>
-                                        <a href="<?php echo "phpFunctions/car.php?id=".$r['id']." " ?>" class="btn btn-primary">تفاصيل </a>
-                                    </div>
-                                </div>cars
-
-                                <?php  echo "</div>" ?>
-
-                            <?php  }} ?>
-                    </div>
                     <button style="position: relative;top:-1500px;"class="btn btn-primary" data-dismiss="modal" type="button">
                         <i class="fas fa-times"></i>Back to School
                     </button>
@@ -585,7 +618,6 @@ session_start();
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
+
+
 <?php } ?>

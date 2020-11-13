@@ -1,17 +1,17 @@
 <?php
 
-require('../../../php/admin/users/addnew.php');
+require('../../../php/admin/petrol/create.php');
 
 if(isset($_POST['register'])){
     $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $state='pending';
+    $details = $_POST['details'];
+    $address = $_POST['address'];
+    $contact = $_POST['contact'];
+    $delivery=$_POST['delivery'];
     $image = $_POST['img1'];
 
-    AddNewUser($name,$email,$password,$phone,$state,$image);
-    header('location:empty.php?page=register');
+    AddPetrolStation($name,$details,$address,$contact,$delivery,$image);
+    header('location:empty.php?page=petrol');
 }
 require_once('includes/header.php');
 require_once('includes/nav.php');
@@ -20,53 +20,51 @@ require_once('includes/main.php');
 
 <center>
     <div class="card" style="height: 550px;width: 500px;display: inline-block;margin-top: 20px;text-align: center;padding-top: 20px;padding-bottom: 70px">
-        Add New Employee
+        اضافة محطه بنزين جديده
         <div class="card-body" >
-            <form method="POST" action="newuser.php" enctype="multipart/form-data">
+            <form method="POST" action="newpetrol.php" enctype="multipart/form-data">
 
-                <table class="table" style="text-align: left;direction: ltr">
+                <table class="table" style="text-align: right;direction: rtl">
                     <tbody>
                     <tr>
-                        <th scope="row">Employee Name</th>
-
+                        <th scope="row">اسم المحطه</th>
                         <td>
                             <input class="btn btn-outline-primary" type="text" name="name"  id="name" style="text-align: right">
                         </td>
-
                     </tr>
                     <tr>
-                        <th scope="row">Employee Phone Number</th>
+                        <th scope="row"> التفاصيل</th>
                         <td>
-                            <input class="btn btn-outline-primary" type="text" name="phone" id="phone"  style="text-align: right">
+                            <input class="btn btn-outline-primary" type="text" name="details" id="details"  style="text-align: right">
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">Employee Email</th>
+                        <th scope="row">العنوان </th>
                         <td>
-                            <input class="btn btn-outline-primary" type="text" name="email" id="email"  style="text-align: right">
+                            <input class="btn btn-outline-primary" type="text" name="address" id="address"  style="text-align: right">
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">Password</th>
+                        <th scope="row">خدمة العملاء</th>
                         <td>
-                            <input class="btn btn-outline-primary" type="text" name="password" id="Upassword"  style="text-align: right">
+                            <input class="btn btn-outline-primary" type="text" name="contact" id="contact"  style="text-align: right">
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">IsAdmin</th>
+                        <th scope="row">توصيل للمنزل</th>
                         <td>
-                            <select class="btn btn-outline-primary" name="isAdmin" id="UisAdmin" style="text-align: right">
-                                <option value="false">No</option>
-                                <option value="true">Yes</option>
+                            <select class="btn btn-outline-primary" name="delivery" id="delivery" style="text-align: right">
+                                <option value="0">لا</option>
+                                <option value="1">نعم</option>
 
                             </select>
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">Image</th>
+                        <th scope="row">الصوره</th>
                         <td>
                             <input type="file" class="form-control-file" id="photo1" onchange="uploadImage()"  class="btn btn-outline-primary" required >
                             <input type="hidden"  name="img1" id="img1">
@@ -78,7 +76,7 @@ require_once('includes/main.php');
                     </tbody>
                 </table>
 
-                <input type="submit" value="Add New Employee" class="btn btn-primary" name="register" >
+                <input type="submit" value="اضافة موظف جديد" class="btn btn-primary" name="register" >
             </form>
         </div>
     </div>
@@ -101,7 +99,7 @@ require_once('includes/main.php');
 
 
     function uploadImage() {
-        const ref = firebase.storage().ref('/users');
+        const ref = firebase.storage().ref('/petrolStation');
         const file = document.querySelector("#photo1").files[0];
         const name = +new Date() + "-" + file.name;
         const metadata = {

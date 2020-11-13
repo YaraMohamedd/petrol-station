@@ -1,9 +1,6 @@
 <?php
-@include_once '../../../vendor/autoload.php';
+@include_once '../../../../vendor/autoload.php';
 use Kreait\Firebase\Factory;
-@session_start();
-
-
 
 function SelectWithNode($tablename,$state){
     $factory = (new Factory())
@@ -12,6 +9,16 @@ function SelectWithNode($tablename,$state){
     $result = $database->getReference($tablename.'/'.$state)->getSnapshot()->getValue();
     return $result;
 }
+
+
+function SelectWithNode1($tablename){
+    $factory = (new Factory())
+        ->withDatabaseUri('https://petrolstation-a32b4.firebaseio.com/');
+    $database = $factory->createDatabase();
+    $result = $database->getReference($tablename)->getSnapshot()->getValue();
+    return $result;
+}
+
 function register($name,$email,$password,$phone,$state,$image)
 {
     $factory = (new Factory())
@@ -42,14 +49,13 @@ function register($name,$email,$password,$phone,$state,$image)
 
 
 }
-//register('mohamed','mohamed@yahoo.com','123123','123123','pending');
-function userAccOrRef($name,$email,$password,$phone,$oldState,$newState,$uid)
+function AccOrRef($name,$email,$password,$phone,$state,$image,$id,$newState,$isAdmin)
 {
     $factory = (new Factory())
         ->withDatabaseUri('https://petrolstation-a32b4.firebaseio.com/');
     $database = $factory->createDatabase();
 
-    $newPostKey = $uid;
+    $newPostKey = $id;
     //$newPostKey = $userid->uid;
 
     $userData = [
@@ -58,11 +64,11 @@ function userAccOrRef($name,$email,$password,$phone,$oldState,$newState,$uid)
         'password' => $password,
         'phone' => $phone,
         'userId' =>$newPostKey,
-        'image'=>'',
+        'image'=>$image,
+        'isAdmin'=>$isAdmin
     ];
 
-    $database->getReference('Users/'.$oldState.'/'.$newPostKey)->remove();
-
+    $database->getReference('Users/'.$state.'/'.$newPostKey)->remove();
     $Register= [
         'Users/'.$newState.'/'.$newPostKey=>$userData,
     ];
@@ -74,31 +80,10 @@ function userAccOrRef($name,$email,$password,$phone,$oldState,$newState,$uid)
 
 
 }
-//userAccOrRef('mohamed','mohamed@yahoo.com','111111111','123123','accepted','accepted','-ML-W4O2NDCvt4KCd8yj');
-/*function cardRequesr(){
+function DelOneNode($nodeName,$id){
     $factory = (new Factory())
         ->withDatabaseUri('https://petrolstation-a32b4.firebaseio.com/');
     $database = $factory->createDatabase();
+    $database->getReference($nodeName.'/'.$id)->remove();
+}
 
-    $newPostKey = $database->getReference('requets')->push()->getKey();
-    //$newPostKey = $userid->uid;
-
-    $userData = [
-        'name' => $name,
-        'email' => $email,
-        'password' => $password,
-        'phone' => $phone,
-        'userId' =>$newPostKey,
-        'image'=>$image,
-        'isAdmin'=>0
-    ];
-
-    $Register= [
-        'Users/'.$state.'/'.$newPostKey=>$userData,
-    ];
-
-    $addedDocRef= $database->getReference()->update($Register);
-
-
-
-}*/

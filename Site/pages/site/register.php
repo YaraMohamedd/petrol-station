@@ -57,51 +57,67 @@ if(isset($_POST['register'])){
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top" style="text-align: right">
+<header id="header" class="fixed-top" style="text-align: left">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-xl-10 d-flex align-items-center">
-                <h1 class="logo mr-auto"><a href="index.php">محطات الوقود<span>.</span></a></h1>
+                <h3 class="logo mr-auto"><a href="index.php"> Petrol Stations<span>.</span></a></h3>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
-                <nav class="nav-menu d-none d-lg-block" style="width: auto;text-align: center;direction: ltr;">
+                <nav class="nav-menu d-none d-lg-block" style="width: auto;text-align: left;direction: ltr;">
                     <ul>
-                        <li><a href="register.php">التسجيل</a></li>
-                        <li><a href="login.php">تسجيل الدخول</a></li>
-                        <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
-
+                        <?php
+                        if(@$_SESSION['isactive']){
+                            ?>
+                            <li><a href="logout.php"> Sign out</a></li>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if(!@$_SESSION['isactive']){
+                            ?>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="login.php"> Login</a></li>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if(@$_SESSION['isadmin'] && @$_SESSION['isactive']){
+                            ?>
+                            <li><a href="../cpanel/dashboard-home/dashboard.php">Cpanel</a></li>
+                            <?php
+                        }
+                        ?>
                         <!--
                                       <li><a href="#">تسجيل الدخول</a></li>
-
                                       <li><a href="../cpanel/dashboard-home/dashboard.php">لوحة التحكم</a></li>
                         -->
-                        <li><a href="#contact">تواصل معنا</a></li>
-                        <li><a href="#team">محطات الوقود</a></li>
-                        <li><a href="#services">خدماتنا</a></li>
-                        <li class="drop-down"><a href="#portfolio">الخدمات</a>
+                        <li><a href="index.php#contact">Contact us</a></li>
+                        <li><a href="index.php#petrol">Petrol Stations</a></li>
+                        <li class="drop-down"><a href="index.php#portfolio">Services</a>
                             <ul>
 
-                                <li class="drop-down"><a href="#">حجز بطاقة خصومات</a>
+                                <li class="drop-down"><a href="request.php?request=card">Reserve a discount cards</a>
                                     <ul>
-                                        <li><a href="#">طلب خدمه</a></li>
-                                        <li><a href="#">عرض الطلبات</a></li>
+                                        <li><a href="request.php?request=card">Add Request</a></li>
+                                        <li><a href="viewRequests.php?request=card">View Requests</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="drop-down"><a href="#">شراء براميل بنزين</a>
+                                <li class="drop-down"><a href="request.php?request=banzin">Reservation of petrol barrels</a>
                                     <ul>
-                                        <li><a href="#">طلب خدمه</a></li>
-                                        <li><a href="#">عرض الطلبات</a></li>
+                                        <li><a href="request.php?request=banzin">Add Request</a></li>
+                                        <li><a href="viewRequests.php?request=banzin">View Requests</a></li>
                                     </ul>
                                 </li>
 
 
 
-                                <li class="drop-down"><a href="#">شراء براميل غاز</a>
+                                <li class="drop-down"><a href="request.php?request=gaz">Reservation of gas barrels</a>
                                     <ul>
-                                        <li><a href="#">طلب خدمه</a></li>
-                                        <li><a href="#">عرض الطلبات</a></li>
+                                        <li><a href="request.php?request=gaz">Add Request</a></li>
+                                        <li><a href="viewRequests.php?request=gaz">View Requests</a></li>
                                     </ul>
                                 </li>
 
@@ -109,10 +125,12 @@ if(isset($_POST['register'])){
 
                             </ul>
                         </li>
-                        <li><a href="#header">الصفحه الرئسيه</a></li>
+                        <li><a href="index.php#services">Our Services</a></li>
+
+                        <li><a href="index.php"> Home Page</a></li>
                     </ul>
                 </nav><!-- .nav-menu -->
-                <a href="#about" class="get-started-btn scrollto">تصفح الان</a>
+                <a href="index.php#services" class="get-started-btn scrollto"> Explore Now </a>
             </div>
         </div>
 
@@ -121,43 +139,45 @@ if(isset($_POST['register'])){
 
 <section class="container-fluid" style="text-align: right;direction: rtl">
     <!-- row and justify-content-center class is used to place the form in center -->
-    <section class="row justify-content-center">
+    <section class="row justify-content-center" style="text-align: center;direction: rtl;background:#222222" >
+        <img  style="width:300px;margin-top:20px;align-terms:center;margin-right:800px;margin-top:60px"src="assets/img/image.svg">
+
         <section class="col-12 col-sm-6 col-md-4">
 
-            <form class="form-container" action="register.php" method="post">
+            <form  style="background:#F2AB04;height:700px; border-bottom-left-radius: 12px;border-top-left-radius: 12px;border-top-right-radius: 12px;border-bottom-right-radius: 12px" class="form-container" action="register.php" method="post">
+                <img style="height:100px; align-items: center" src="assets/img/avatar.svg" >
                 <div class="form-group">
-                    <h4 class="text-center font-weight-bold"> التسجيل  </h4>
-                    <label > اسم المستخدم  </label>
-                    <input type="text" class="form-control"   placeholder="قم بإدخال اسم المستخدم " name="name" required >
+                    <h4 style="color:#ffffff" class="text-center font-weight-bold"> Register  </h4>
+                    <label style="color:#ffffff;margin-right: 220px"> User name  </label>
+                    <input style="margin-right:60px; width:300px;text-align: left " type="text" class="form-control"   placeholder="Please Enter User name" name="name" required >
                 </div>
 
 
                 <div class="form-group">
-                    <label >البريد الإلكتروني </label>
-                    <input type="email" class="form-control"  placeholder="قم بإدخال البريد الإلكتروني " name="email" required>
+                    <label style="color:#ffffff;margin-right:255px" >Email </label>
+                    <input   style="margin-right:60px; width:300px;text-align: left " type="email" class="form-control"  placeholder="Please Enetr our email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label >كلمة المرور</label>
-                    <input type="password" class="form-control"  placeholder="قم بإدخال كلمة المرور" name="password" required>
+                    <label style="color:#ffffff;margin-right:240px"> Password</label>
+                    <input  style="margin-right:60px; width:300px;text-align: left " type="password" class="form-control"  placeholder="Please Enter Your password" name="password" required>
                 </div>
 
                 <div class="form-group">
-                    <label > رقم الجوال   </label>
-                    <input type="text" class="form-control"   placeholder="قم بإدخال رقم الجوال  " name="phone" required >
+                    <label style="color:#ffffff;margin-right:250px">  Phone    </label>
+                    <input  style="margin-right:60px; width:300px;text-align: left " type="text" class="form-control"   placeholder="Please Enter your phone number " name="phone" required >
                 </div>
                 <div class="form-group">
-                    <th scope="row">صورة</th>
-                    <td>
-                        <input type="file" class="form-control-file" id="photo1" onchange="uploadImage()" required class="btn btn-outline-primary">
+                    <label style="color:#ffffff;margin-left:200px"> Image  </label>
+                        <input style="margin-right:60px; width:300px " type="file" class="form-control-file" id="photo1" onchange="uploadImage()" required class="btn btn-outline-primary">
                         <input type="hidden" value="" name="img1" id="img1">
-                        <meter class="disk_d"  id="disk_d1"></meter>
+                        <meter style="margin-right:60px; width:200px " class="disk_d"  id="disk_d1"></meter>
 
 
-                    </td>
+
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" name="register">تسجيل </button>
+                <button  style="margin-top:30px;margin-right:60px; width:300px;background:#222222;color:blanchedalmond;border-color:#222222;border-bottom-left-radius: 12px;border-top-left-radius: 12px;border-top-right-radius: 12px;border-bottom-right-radius: 12px" type="submit" class="btn btn-primary btn-block" name="register">Register </button>
                 <div class="form-footer">
-                    <p> تمتلك حساب بالفعل ؟ <a href="login.php">تسجيل الدخول</a></p>
+                    <p style="color:#ffffff;margin-top:12px"> Already have an account !? <a style="color:#222222" href="login.php">Login Now</a></p>
 
                 </div>
             </form>
@@ -203,3 +223,6 @@ if(isset($_POST['register'])){
     }
 
 </script>
+
+
+
