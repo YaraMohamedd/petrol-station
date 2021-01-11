@@ -148,5 +148,7 @@ if(@$_SESSION['isactive']){
 
 </script>
 <?php
+}else{
+    header('location:login.php');
 }
 ?>

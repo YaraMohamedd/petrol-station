@@ -72,7 +72,7 @@ if(@$_SESSION['isactive']){
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Petrol Station</title>
+    <title>Acquiring Oman Oil Services</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -109,8 +109,8 @@ if(@$_SESSION['isactive']){
 <header id="header" class="fixed-top" style="text-align: left">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-xl-10 d-flex align-items-center">
-                    <h3 class="logo mr-auto"><a href="index.php"> Petrol Stations<span>.</span></a></h3>
+                <div class="col-xl-12 d-flex align-items-center">
+                    <h6 class="logo mr-auto"><a href="index.php">Oman Oil Services<span>.</span></a></h6>
                     <!-- Uncomment below if you prefer to use an image logo -->
                     <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -279,6 +279,16 @@ if(@$_SESSION['isactive']){
                                 }?>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label >Delivery method</label>
+
+                            <select name="delivery" class="form-control" >
+                                <option  selected>Select your delivery method</option>
+                                <option value="home">Home delivery</option>
+                                <option value="serve">Reservation from one of our stations</option>
+
+                            </select>
+                        </div>
 
                         <div class="form-group">
                             <label >Select banzin type  </label>
@@ -313,22 +323,15 @@ if(@$_SESSION['isactive']){
                             </select>
 
                         </div>
-
+                        <div class="form-group" style="display: none" id="amountDiv">
+                            <label >  Amount   </label>
+                            <input type="number" class="form-control"   name="amountPerOne"  id="amountPerOne" required onchange="ChangeAmount()">
+                        </div>
                         <div class="form-group" style="display: none" id="priceDiv">
                             <label >  Price   </label>
                             <input type="number" class="form-control"   name="price"  id="price" required >
                         </div>
 
-                        <div class="form-group">
-                            <label >Delivery method</label>
-
-                            <select name="delivery" class="form-control" >
-                                <option  selected>Select your delivery method</option>
-                                <option value="home">Home delivery</option>
-                                <option value="serve">Reservation from one of our stations</option>
-
-                            </select>
-                        </div>
 
                         <button type="submit" class="btn btn-warning btn-block" name="request">book </button>
 
@@ -370,6 +373,16 @@ if(@$_SESSION['isactive']){
                             </select>
 
                         </div>
+                        <div class="form-group">
+                            <label >Delivery method</label>
+
+                            <select name="delivery" class="form-control" >
+                                <option  selected>Select your delivery method</option>
+                                <option value="home">Home delivery</option>
+                                <option value="serve">Reservation from one of our stations</option>
+
+                            </select>
+                        </div>
 
                         <div class="form-group">
                             <label >Select gaz type  </label>
@@ -404,19 +417,16 @@ if(@$_SESSION['isactive']){
                             </select>
 
                         </div>
+
+
+                        <div class="form-group" style="display: none" id="amountDiv">
+                            <label >  Amount   </label>
+                            <input type="number" class="form-control"   name="amountPerOne"  id="amountPerOne" required onchange="ChangeAmount()">
+                        </div>
+
                         <div class="form-group" style="display: none" id="priceDiv">
                             <label >  Price   </label>
                             <input type="number" class="form-control"   name="price"  id="price" required >
-                        </div>
-                        <div class="form-group">
-                            <label >Delivery method</label>
-
-                            <select name="delivery" class="form-control" >
-                                <option  selected>Select your delivery method</option>
-                                <option value="home">Home delivery</option>
-                                <option value="serve">Reservation from one of our stations</option>
-
-                            </select>
                         </div>
 
                         <button type="submit" class="btn btn-warning btn-block" name="request">book </button>
@@ -455,28 +465,57 @@ if(@$_SESSION['isactive']){
 
 </script>
 <script>
+
     function CalaPrice() {
         var type =  document.getElementById('type').value;
         var amount = document.getElementById('amount').value;
+        document.getElementById('amountDiv').style.display ='block';
         document.getElementById('priceDiv').style.display ='block';
+        document.getElementById('amountPerOne').value =1;
+
         if(type === "90"){
          if(amount ==="quarter container"){
-             document.getElementById('price').value =25;
+             document.getElementById('price').value =2;
          }else if(amount ==="full container"){
-             document.getElementById('price').value =100;
+             document.getElementById('price').value =4;
          }else if(amount ==="half container"){
-             document.getElementById('price').value =50;
+             document.getElementById('price').value =8;
          }
-        }else if("95"){
+        }else if(type === "95"){
             if(amount ==="quarter container"){
-                document.getElementById('price').value =125;
+                document.getElementById('price').value =2.5;
             }else if(amount ==="full container"){
-                document.getElementById('price').value =1100;
+                document.getElementById('price').value =5;
             }else if(amount ==="half container"){
-                document.getElementById('price').value =150;
+                document.getElementById('price').value =10;
+            }
+        }else if(type === "98"){
+            if(amount ==="quarter container"){
+                document.getElementById('price').value =3.5;
+            }else if(amount ==="full container"){
+                document.getElementById('price').value =7.5;
+            }else if(amount ==="half container"){
+                document.getElementById('price').value =13;
+            }
+        }else if(type === "Nitrogen"){
+            if(amount ==="Liter"){
+                document.getElementById('price').value =2.5;
+            }
+        }else if(type === "Normal Air"){
+            if(amount ==="Liter"){
+                document.getElementById('price').value =2;
             }
         }
     }
+
+    function ChangeAmount(){
+        var val= parseFloat(document.getElementById('amountPerOne').value) ;
+        var lastVal =parseFloat(document.getElementById('price').value);
+        document.getElementById('price').value = val * lastVal;
+
+    }
+
+
 </script>
 <?php
 }else{

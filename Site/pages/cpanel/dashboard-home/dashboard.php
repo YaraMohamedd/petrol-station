@@ -11,15 +11,17 @@ require('../../../php/admin/login.php');
 
 
 
-<div class="app-content content">
+<div class="app-content content" style="background:#F2AB04;">
     <div class="content-wrapper">
         <div class="content-header row">
             <br>
         </div>
-        <div class="content-body">
+        <div class="content-body" >
+            <img  style="width:500px;margin-top:20px;align-terms:center;margin-right:500px;margin-top:60px"src="../../site/assets/img/image.svg">
 
             <!--/ Sell Orders & Buy Order -->
             <!-- Active Orders -->
+           <!--
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -127,7 +129,7 @@ require('../../../php/admin/login.php');
                     </div>
                 </div>
             </div>
-            <!-- Active Orders -->
+             Active Orders -->
         </div>
     </div>
 </div><!-- ////////////////////////////////////////////////////////////////////////////-->

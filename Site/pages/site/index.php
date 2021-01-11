@@ -12,7 +12,7 @@ require_once 'realtime.php';
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Petrol Station</title>
+  <title>Acquiring Oman Oil Services</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,8 +50,9 @@ require_once 'realtime.php';
   <header id="header" class="fixed-top" style="text-align: left">
       <div class="container-fluid">
           <div class="row justify-content-center">
-              <div class="col-xl-10 d-flex align-items-center">
-                  <h3 class="logo mr-auto"><a href="index.php"> Petrol Stations<span>.</span></a></h3>
+              <div class="col-xl-12 d-flex align-items-center">
+
+                  <h6 class="logo mr-auto"><a href="index.php">Oman Oil Services<span>.</span></a></h6>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -127,7 +128,7 @@ require_once 'realtime.php';
       </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Site Description Section ======= -->
   <section id="hero" class="d-flex align-items-center" style="text-align: left;direction: ltr">
 
     <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
@@ -136,12 +137,11 @@ require_once 'realtime.php';
           <div class="row">
             <div class="col-xl-5">
               <h1>
-                  Better digital experience with the gas station
+                  Oman Oil Company for Entertainment Services website
 
               </h1>
               <h2>
-                  This station provides you with some services that save you time and effort
-
+                  Enjoy a world of fun and interaction with the Oman Oil Services website
               </h2>
               <a href="#about" class="btn-get-started scrollto"> Explore Now</a>
             </div>
@@ -156,49 +156,7 @@ require_once 'realtime.php';
 
 
 
-<!--
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="icofont-users-alt-4"></i>
-              <span data-toggle="counter-up">244</span>
-              <p>عدد المستخدمين</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="icofont-money-bag"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>سعر الوقود</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-clock-time"></i>
-              <span data-toggle="counter-up">12</span>
-              <p>مواعيد العمل</p>
-            </div>
-          </div>
-
-            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                <div class="count-box">
-                    <i class="icofont-clock-time"></i>
-                    <span data-toggle="counter-up">12</span>
-                    <p>مواعيد العمل</p>
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-
+      
      <!-- ======= Services Section ======= -->
      <section id="services" class="services section-bg ">
       <div class="container" data-aos="fade-up" >
@@ -258,8 +216,8 @@ require_once 'realtime.php';
               <div class="row" >
                   <!--First Service -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                      <div class="portfolio-wrap">
-                          <img src="assets/img/service4.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-wrap" >
+                          <img src="https://firebasestorage.googleapis.com/v0/b/petrolstation-a32b4.appspot.com/o/Images%2F3dimage.png?alt=media&token=823f5953-5840-4126-bc48-2088b2692119" class="img-fluid" alt="">
                           <div class="portfolio-info">
                               <h4>
                                   Reserve a discount cards
@@ -286,7 +244,7 @@ require_once 'realtime.php';
                   <!--Second Service -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                       <div class="portfolio-wrap">
-                          <img src="assets/img/service4.jpg" class="img-fluid" alt="">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/petrolstation-a32b4.appspot.com/o/Images%2Fface%20recoganization.jpg?alt=media&token=ca19eb26-04f1-4614-9c12-ef977b71bbf0" class="img-fluid" alt="">
                           <div class="portfolio-info">
                               <h4>
                                   Reservation of petrol barrels                              </h4>
@@ -436,21 +394,21 @@ require_once 'realtime.php';
                 <div class="info-box">
                   <i class="bx bx-map"></i>
                   <h3>Address</h3>
-                  <p>Our Company Address</p>
+                  <p>Bawshar, Muscat, Oman</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Emails</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <p>info@gmail.com<br>contact@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Phone Numbers</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                  <p>+968 9956 7352
                 </div>
               </div>
             </div>
@@ -498,13 +456,7 @@ require_once 'realtime.php';
   <!--  <div class="copyright">
       &copy; Copyright <strong><span>Presento</span></strong>. كافة الحقوق محفوظه
     </div>-->
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">MohamedElredeny</a>
-    </div>
+
   </div>
   <div class="social-links text-center text-md-right pt-3 pt-md-0">
     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>

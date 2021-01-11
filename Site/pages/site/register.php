@@ -24,7 +24,7 @@ if(isset($_POST['register'])){
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Petrol Station</title>
+    <title>Acquiring Oman Oil Services</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -60,8 +60,8 @@ if(isset($_POST['register'])){
 <header id="header" class="fixed-top" style="text-align: left">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-xl-10 d-flex align-items-center">
-                <h3 class="logo mr-auto"><a href="index.php"> Petrol Stations<span>.</span></a></h3>
+            <div class="col-xl-12 d-flex align-items-center">
+                <h6 class="logo mr-auto"><a href="index.php">Oman Oil Services<span>.</span></a></h6>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
