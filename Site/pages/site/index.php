@@ -217,7 +217,7 @@ require_once 'realtime.php';
                   <!--First Service -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                       <div class="portfolio-wrap" >
-                          <img src="https://firebasestorage.googleapis.com/v0/b/petrolstation-a32b4.appspot.com/o/Images%2F3dimage.png?alt=media&token=823f5953-5840-4126-bc48-2088b2692119" class="img-fluid" alt="">
+                          <img src="assets/img/lastUpdate/2.jpeg" class="img-fluid" alt="" style="height: 250px;width: 100%">
                           <div class="portfolio-info">
                               <h4>
                                   Reserve a discount cards
@@ -227,7 +227,7 @@ require_once 'realtime.php';
 
                               </p>
                               <div class="portfolio-links">
-                                  <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                                  <a href="assets/img/lastUpdate/3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
                               </div>
                           </div>
                       </div>
@@ -244,7 +244,7 @@ require_once 'realtime.php';
                   <!--Second Service -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                       <div class="portfolio-wrap">
-                          <img src="https://firebasestorage.googleapis.com/v0/b/petrolstation-a32b4.appspot.com/o/Images%2Fface%20recoganization.jpg?alt=media&token=ca19eb26-04f1-4614-9c12-ef977b71bbf0" class="img-fluid" alt="">
+                          <img src="assets/img/lastUpdate/3.jpg" class="img-fluid" alt="" style="height: 250px;width: 100%">
                           <div class="portfolio-info">
                               <h4>
                                   Reservation of petrol barrels                              </h4>
@@ -253,7 +253,7 @@ require_once 'realtime.php';
 
                               </p>
                               <div class="portfolio-links">
-                                  <a href="assets/img/service4.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                                  <a href="assets/img/lastUpdate/2.jpeg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
 
                               </div>
                           </div>
@@ -271,7 +271,7 @@ require_once 'realtime.php';
                   <!--Third Service -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                       <div class="portfolio-wrap">
-                          <img src="assets/img/service4.jpg" class="img-fluid" alt="">
+                          <img src="assets/img/service4.jpg" class="img-fluid" alt="" style="height: 250px;width: 100%">
                           <div class="portfolio-info">
                               <h4>
                                   Reservation of gas barrels

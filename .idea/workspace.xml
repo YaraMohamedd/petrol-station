@@ -21,16 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8dd3f26d-0150-4a2d-ac5e-1ea954776fb9" name="Default Changelist" comment="Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/cpanel/dashboard-home/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/blog-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/blog-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Site/pages/site/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Site/pages/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/inner-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/portfolio-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/portfolio-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/request.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Site/pages/site/viewRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/Site/pages/site/viewRequests.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +124,9 @@
       <workItem from="1609886117299" duration="576000" />
       <workItem from="1609893184910" duration="83000" />
       <workItem from="1609969123514" duration="691000" />
-      <workItem from="1610355131043" duration="1097000" />
+      <workItem from="1610355131043" duration="1829000" />
+      <workItem from="1610374391731" duration="114000" />
+      <workItem from="1610654400618" duration="1454000" />
     </task>
     <task id="LOCAL-00001" summary="new update">
       <created>1604079048440</created>
@@ -192,55 +186,5 @@
     <MESSAGE value="new update1" />
     <MESSAGE value="Done" />
     <option name="LAST_COMMIT_MESSAGE" value="Done" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1508" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604774537368">
-      <screen x="1366" y="0" width="1376" height="900" />
-    </state>
-    <state x="1508" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604774537368" />
-    <state x="1706" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604267661188">
-      <screen x="1366" y="0" width="1024" height="728" />
-    </state>
-    <state x="1706" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604267661188" />
-    <state x="454" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604019252936" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609970065937">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1604105006385" />
-    <state x="1713" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604290860067" />
-    <state x="1832" y="147" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1605550198476" />
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1604190123260" />
-    <state x="1854" y="141" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604173893422" />
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609970065937" />
-    <state x="447" y="66" key="RollbackChangesDialog" timestamp="1604019334782">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="447" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604019334782" />
-    <state x="1646" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605284819599">
-      <screen x="1366" y="0" width="1376" height="900" />
-    </state>
-    <state x="1646" y="183" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1605284819599" />
-    <state x="1659" y="175" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604185089097" />
-    <state x="1888" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604185079380">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state x="1888" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604185079380" />
-    <state x="501" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605919831209">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="1871" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604079073198" />
-    <state x="1894" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604185075598" />
-    <state x="501" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1605919831209" />
-    <state x="1725" y="204" key="run.anything.popup" timestamp="1604808641413">
-      <screen x="1366" y="0" width="1376" height="900" />
-    </state>
-    <state x="1725" y="204" key="run.anything.popup/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604808641413" />
-    <state x="1742" y="195" key="run.anything.popup/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1604181752412" />
-    <state x="1601" y="61" width="904" height="839" key="search.everywhere.popup" timestamp="1604808286104">
-      <screen x="1366" y="0" width="1376" height="900" />
-    </state>
-    <state x="1541" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1604280396112" />
-    <state x="233" y="49" width="897" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1376.900@0.0.1366.728" timestamp="1604790151102" />
-    <state x="1601" y="61" width="904" height="839" key="search.everywhere.popup/0.0.1366.728/1366.0.1376.900@1366.0.1376.900" timestamp="1604808286104" />
   </component>
 </project>
